@@ -7,11 +7,10 @@ class openacademy(models.Model):
 
     name = fields.Char()
     biography = fields.Html()
-    course_ids = fields.One2many('openacademy.courses', 'teacher_id', string="Courses")
+    course_ids = fields.One2many('product.template', 'teacher_id', string="Courses")
 
 class Courses(models.Model):
-    _name = 'openacademy.courses'
-    _inherit = 'mail.thread'
+    _inherit = 'product.template'
 
     name = fields.Char()
     teacher_id = fields.Many2one('openacademy.teachers', string="Teacher")

@@ -1,3 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_openacademy_teachers,access_openacademy_teachers,model_openacademy_teachers,,1,0,0,0
-access_openacademy_courses,access_openacademy_courses,model_openacademy_courses,,1,0,0,0
